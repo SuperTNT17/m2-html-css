@@ -1,5 +1,6 @@
 body{
     background-color: rgb(245, 227, 165);
+    margin: 0px;
 }
 
 h1{
@@ -42,4 +43,8 @@ article{
 
 article p{
     font-family: Arial, Helvetica, sans-serif;
+}
+
+audio{
+    margin-bottom: 50px;
 }
