@@ -6,12 +6,22 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 body {
-    background-color: rgb(245, 227, 165);
     margin: 0px;
     display: flex;
     flex-direction: column;
+}
+
+#kaasBody{
+    background-color: rgb(245, 227, 165);
+}
+
+#patatBody{
+    background-color: rgb(37, 159, 110);
 }
 
 header,
@@ -46,13 +56,13 @@ figure {
     text-align: center;
 }
 
-#kaas {
+#mainImage {
     width: 100%;
     transition: 1s transform;
     margin-bottom: 20px;
 }
 
-#kaas:hover {
+#mainImage:hover {
     transform: scale(1.1);
 }
 
@@ -75,6 +85,24 @@ video{
     width: 80%;
 }
 
+#scrollUpButton{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: gray;
+    border: none;
+    font-size: 400%;
+    font-family: 'Nunito';
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    position: fixed;
+    bottom: 5vh;
+    right: 5vw;
+}
+
 footer > p{
     color: rgb(0, 0, 136);
 }
@@ -90,6 +118,11 @@ footer > p{
         width: 80vw;
     }
 
+    #scrollUpButton{
+        width: 70px;
+        height: 70px;
+        font-size: 300%;
+    }
     
 }
 
@@ -103,6 +136,13 @@ footer > p{
     footer{
         width: 90vw;
     }
+
+    #scrollUpButton{
+        width: 50px;
+        height: 50px;
+        font-size: 200%;
+    }
+    
 }
 
 @media screen and (max-width: 400px) {
@@ -118,5 +158,9 @@ footer > p{
 
     p{
         font-size: 14px;
+    }
+
+    #scrollUpButton{
+        display: none;
     }
 }
